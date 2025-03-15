@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="icon" type="image/png" href="images/pngtree-quiz-blue-glossy-web-icon-game-photo-png-image_13759459.png">
+    <link rel="stylesheet" href="css/gamescreen.css">
+</head>
+<body class="gamescreen-body">
+    <div class="gamescreen-wrapper" id="wrapper">
+        <p>
+            <img src="images/quiz-neon-sign_1262-19629.avif" class="gamescreen-logo">
+        </p>
+
+        <div class="timer-container">
+            <span>Time Left:</span>
+            <span id="timer">15</span>s
+        </div>
+
+        <div id="counter">
+            <div id="counterSpan"></div>
+        </div>
+
+        <div class="question" id="question">
+            <span class="span">Question goes here?</span>
+        </div>
+
+        <span class="result off" id="result">
+            <span>INCORRECT!</span>
+        </span>
+
+        <div class="answers" id="answers">
+            <p class="first-p"><button type="button" class="btn answer">Answer 1</button></p>
+            <p><button type="button" class="btn answer">Answer 2</button></p>
+            <p><button type="button" class="btn answer">Answer 3</button></p>
+            <p><button type="button" class="btn answer">Answer 4</button></p>
+        </div>
+
+        <div class="submit" id="submit">
+            <button type="button" class="btn-submit" id="btnSubmit">CHECK</button>
+        </div>
+
+        <div class="next" id="next">
+            <p><button type="button" class="btn-next" id="btnNext">NEXT</button></p>
+        </div>
+    </div>
+    <script src="js/question.js"></script>
+</body>
+</html>

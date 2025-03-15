@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/selection.css">
+    <link rel="icon" type="image/png" href="images/pngtree-quiz-blue-glossy-web-icon-game-photo-png-image_13759459.png">
+
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="hero-image">
+                <img src="images/quiz-neon-sign_1262-19629.avif" class="entry-logo">
+            </div>    
+        </main>
+        <form id="selection-menu" class="selection-menu">
+            <label>
+                <p class="text-pad">Category:</p>
+                <select id="category" class="category" value="category">
+                    <option value="">Any Category</option>
+                </select>
+            </label>
+            <label>
+                <p class="text-pad">Difficulty:</p>
+                <select id="difficulty" class="difficulty">
+                    <option value = "">Any Difficulty</option>
+                </select>
+            </label>
+            
+        </form>
+        <form id= "other-form">
+            <label>
+                <p id="numQuestions" class="text-pad">Number of Questions:*</p>
+                <select id="questionNum" class="questionNum"> 
+                    <option value="" required>Select Number</option>
+                </select>
+            </label>
+        </form>
+        <div id='submitForm' class="play-game">
+            GAME ON!
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>  
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="icon" type="image/jpeg" href="images/t1.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="images/game-title-logo.png" alt="Game Logo">
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="player1Name" placeholder="Player 1 Name" value="Player 1">
+        <input type="text" id="player2Name" placeholder="Player 2 Name" value="Player 2">
+    </div>
+
+    <div class="container">
+
+        <div class="player" id="player1">
+            <h2 id="name1">Player 1</h2>
+            <p>Saved Score: <span id="savedScore1">0</span></p>
+            <p>Current Score: <span id="currentScore1">0</span></p>
+        </div>
+
+        <div class="player" id="player2">
+            <h2 id="name2">Player 2</h2>
+            <p>Saved Score: <span id="savedScore2">0</span></p>
+            <p>Current Score: <span id="currentScore2">0</span></p>
+        </div>
+
+    </div>
+
+    <div class="dice">
+        <img id="diceImage" src="images/dice1.png" alt="Dice">
+    </div>
+
+
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="rollDice()" disabled id="rollBtn">Roll Dice</button>
+    <button onclick="saveScore()" disabled id="saveBtn">Save Score</button>
+    <button onclick="resetGame()">Reset</button>
+    
+    
+    <div id="winnerScreen" class="winner-screen">
+        <p id="winnerText"></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+    
+</body>
+</html>

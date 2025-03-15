@@ -1,0 +1,15 @@
+Difference Between Primitive and Reference Data Types in Java
+->Primitive data types store actual values directly in stack memory.
+They have a fixed size, are faster to access, and cannot be null except
+when using wrapper classes like Integer or Double. Examples of primitive
+types include int, double, char, and boolean. For instance, an integer 
+variable storing the value 10 directly holds that value in memory.
+->Reference data types, on the other hand, store memory addresses (references)
+to objects in heap memory. They have dynamic sizes, can be null, and are slower
+to access compared to primitives. Examples of reference types include Strings,
+arrays, and objects. For example, when a String variable holds the value "Java",
+it actually stores a reference to the memory location where the string is stored.
+One key difference is that when a primitive variable is assigned to another, a copy 
+of the value is made, whereas for reference types, only the reference is copied, meaning
+changes in one affect the other. This distinction is crucial when working with objects
+and memory management in Java.

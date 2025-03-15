@@ -1,0 +1,54 @@
+*)Interfaces and Abstract Classes: 
+->interfaces and abstract classes help define blueprints for other classes.
+=>Abstract Class:Can have both abstract methods (without a body) and concrete methods (with implementation).
+Cannot be instantiated directly.
+Can have instance variables and constructors.
+abstract class Animal {
+    String name;
+
+    // Constructor
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    // Abstract method (to be implemented by subclasses)
+    abstract void makeSound();
+
+    // Concrete method
+    void display() {
+        System.out.println("Animal: " + name);
+    }
+}
+=>Interface:Only contains abstract methods (until Java 7).
+Java 8+ allows default and static methods with implementation.
+Supports multiple inheritance.
+Example:
+interface Pet {
+    void play();
+}
+
+// Dog class extending Animal and implementing Pet
+class Dog extends Animal implements Pet {
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+
+    @Override
+    public void play() {
+        System.out.println(name + " is playing.");
+    }
+}
+
+public class InterfaceVsAbstract {
+    public static void main(String[] args) {
+        Dog myDog = new Dog("Buddy");
+        myDog.display();
+        myDog.makeSound();
+        myDog.play();
+    }
+}
